@@ -32,6 +32,11 @@ def is_email_addr(text: str) -> bool:
 
 ## Regular expressions
 
+<https://www.regular-expressions.info/email.html>
+
+```python
+"\b[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}\b"
+```
 
 ## Resources
 
