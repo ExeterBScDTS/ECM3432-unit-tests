@@ -86,6 +86,11 @@ def test_bad_email():
 
 ## Selecting tests
 
+There are almost infinite valid email addresses, and similarly for invalid addresses.
+
+
+
+
 ## Resources
 
 <https://datatracker.ietf.org/doc/html/rfc5322>
