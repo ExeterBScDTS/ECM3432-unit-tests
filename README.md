@@ -63,11 +63,11 @@ These tests can be used to establish that objects (typically functions) do what 
 
 ## Pytest
 
-Pytest is an easy to use testing framework for Python that can find and run unit-tests and generate a test report.
+Pytest is an easy to use testing framework for Python that can find and run unit-tests, and generate a test report.
 
 Tests of our email validator might look like this -
 
-```python
+```Python
 from emailcheck import is_email_addr
 
 
@@ -84,12 +84,35 @@ def test_bad_email():
 
 ```
 
+These tests are run using the Pytest framework, e.g.
+
+```sh
+cd code
+python3 -m pytest .
+```
+
+## Testing goals
+
+Validation testing - Does the system operate as intended?
+
+Defect testing - Are there faults in the software where it fails to meet its specification?
+
+![testing-input-output-model.png](testing-input-output-model.png)
+
+Can our function distinguish good email addresses from bad/not email addresses?
+
+Can our function handle bad or missing data?
+
 ## Selecting tests
 
-There are almost infinite valid email addresses, and similarly for invalid addresses.
+There are almost infinite valid email addresses, and similarly for invalid addresses.  What is needed is selection of useful input test candidates.
 
+![equivalence-partitioning.png](equivalence-partitioning.png)
 
+## Exercise -
 
+Propose suitable test inputs for the ```is_email_addr()``` function, by identifying suitable
+equivalence partitions.
 
 ## Resources
 
